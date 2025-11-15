@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Tipografías serif */
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Fondo de la sección hero */
+.hero {
+  background: linear-gradient(to right, #ddc7ff, #dac2fe);
+}
+
+/* Tarjetas de planes */
+.plan-card {
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.plan-card.selected {
+  border-color: #510bf4;
+  background-color: #f5f3ff;
+}
+
+/* Botones personalizados */
+.btn-primary {
+  background-color: #8b5cf6;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2a0072;
+}
+
+.btn-outline {
+  border: 2px solid #8b5cf6;
+  color: #8b5cf6;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+/* Efecto etiqueta flotante */
+.floating-label input:focus-within ~ label,
+.floating-label input:not(:placeholder-shown) ~ label,
+.floating-label textarea:focus-within ~ label,
+.floating-label textarea:not(:placeholder-shown) ~ label,
+.floating-label select:focus-within ~ label,
+.floating-label select:not(:placeholder-shown) ~ label {
+  transform: translateY(-1.5rem) scale(0.85);
+  color: #8b5cf6;
+}
